@@ -61,7 +61,7 @@ Sentiment Classification (ML Models)
 Visualization (PowerBI Dashboards)
 
 ## 👨‍💻 Author
-- **Aaryan Puri** – MITU21BTCS0012
+**Aaryan Puri** 
 
 ## 📄 License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
