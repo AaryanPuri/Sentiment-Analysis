@@ -81,24 +81,25 @@ Export → Power BI Dashboards + Improvement Suggestions
 1. **Install dependencies**
    ```bash
    pip install -r requirements.txt
-   python -m textblob.download_corpora
    ```
 
-2. **Scrape data** (or provide your own CSV with a `text` column)
-   ```python
-   # In the notebook, set your college's Google Maps URL:
-   MAPS_URL = 'https://www.google.com/maps/place/Your+College+Name'
-   ```
+2. **Install ChromeDriver** (required for scraping)
+   - Download from [https://chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads)
+   - Version must match your installed Chrome (`chrome://version`)
+   - Add to system PATH
 
 3. **Run the notebook**
    ```bash
    jupyter notebook sentiment_analysis.ipynb
    ```
+   - **Option 1 — Scrape live data**: In Cell 2, uncomment Option 1 and set your college's Google Maps URL
+   - **Option 2 — Use existing CSV**: In Cell 2, set `CSV_PATH` to your CSV file path (must have a `text` column; `rating` column optional but recommended)
+   - NLTK data is downloaded automatically in Cell 1
 
-4. **Load Power BI**
+4. **Load into Power BI**
    - Open Power BI Desktop
-   - Import `sentiment_for_powerbi.csv`
-   - Build dashboards: sentiment trend, rating distribution, complaint areas
+   - Import `sentiment_for_powerbi.csv` (generated after running the notebook)
+   - Build dashboards: sentiment trend over time, rating distribution, complaint areas
 
 ## 👨‍💻 Author
 **Aaryan Puri**
