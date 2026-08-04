@@ -5,3 +5,5 @@ sentiment_for_powerbi.csv
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+venv/
+.venv/
